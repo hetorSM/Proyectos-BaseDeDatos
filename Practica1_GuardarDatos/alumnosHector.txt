@@ -1,0 +1,8 @@
+hector;santandreu;10421159;2DAM
+Lidia;Hernandez;4557;2FPB
+Alfonso;Pedrego;78944;1DAW
+Hugo;Lorente;43231;2ASIX
+Marta;Muñoz;765433;1ASIX
+Alex;Garcia;145257;1FPB
+cate;cate;348438;2DAM
+pepe;rio;3223;2SMX

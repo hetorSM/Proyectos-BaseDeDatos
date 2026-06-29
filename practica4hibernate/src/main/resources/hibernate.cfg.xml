@@ -1,0 +1,19 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuración de la base de datos -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/transporte</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <!-- Dialecto de Hibernate -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Configuración opcional -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Aquí se añaden las clases de las entidades -->
+        <!--   <mapping class="com.tu.paquete.EntidadClase"/> -->
+        <mapping class="org.example.models.Usuario"/>
+        <mapping class="org.example.models.Camion"/>
+        <mapping class="org.example.models.Trabajo"/>
+    </session-factory>
+</hibernate-configuration>

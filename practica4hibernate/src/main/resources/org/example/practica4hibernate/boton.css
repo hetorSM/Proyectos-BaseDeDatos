@@ -1,0 +1,107 @@
+/* Botón morado */
+.button-purple {
+    -fx-background-color: #9b59b6; /* Color morado */
+    -fx-text-fill: white;
+}
+
+.button-purple:hover {
+    -fx-background-color: #8e44ad; /* Cambia de color cuando pasas el ratón */
+}
+
+.button-purple:focused {
+    -fx-background-color: #7d3c98; /* Cambia de color cuando está seleccionado */
+}
+
+.button-purple:pressed {
+    -fx-background-color: #6c3483; /* Cambia de color cuando está presionado */
+}
+
+/* Botón azul */
+.button-blue {
+    -fx-background-color: #3498db; /* Color azul */
+    -fx-text-fill: white;
+}
+
+.button-blue:hover {
+    -fx-background-color: #2980b9; /* Cambia de color cuando pasas el ratón */
+}
+
+.button-blue:focused {
+    -fx-background-color: #2471a3; /* Cambia de color cuando está seleccionado */
+}
+
+.button-blue:pressed {
+    -fx-background-color: #1a5276; /* Cambia de color cuando está presionado */
+}
+
+/* Botón amarillo */
+.button-yellow {
+    -fx-background-color: #f1c40f; /* Color amarillo */
+    -fx-text-fill: white;
+}
+
+.button-yellow:hover {
+    -fx-background-color: #f39c12; /* Cambia de color cuando pasas el ratón */
+}
+
+.button-yellow:focused {
+    -fx-background-color: #d68910; /* Cambia de color cuando está seleccionado */
+}
+
+.button-yellow:pressed {
+    -fx-background-color: #b9770e; /* Cambia de color cuando está presionado */
+}
+
+/* Botón verde */
+.button-green {
+    -fx-background-color: #2ecc71; /* Color verde */
+    -fx-text-fill: white;
+}
+
+.button-green:hover {
+    -fx-background-color: #27ae60; /* Cambia de color cuando pasas el ratón */
+}
+
+.button-green:focused {
+    -fx-background-color: #229954; /* Cambia de color cuando está seleccionado */
+}
+
+.button-green:pressed {
+    -fx-background-color: #1e8449; /* Cambia de color cuando está presionado */
+}
+
+/* Botón marrón */
+.button-brown {
+    -fx-background-color: #a0522d; /* Color marrón */
+    -fx-text-fill: white;
+}
+
+.button-brown:hover {
+    -fx-background-color: #8b4513; /* Cambia de color cuando pasas el ratón */
+}
+
+.button-brown:focused {
+    -fx-background-color: #6e2c00; /* Cambia de color cuando está seleccionado */
+}
+
+.button-brown:pressed {
+    -fx-background-color: #5d2900; /* Cambia de color cuando está presionado */
+}
+
+/* Botón gris */
+.button-grey {
+    -fx-background-color: #7f8c8d; /* Color gris */
+    -fx-text-fill: white;
+}
+
+.button-grey:hover {
+    -fx-background-color: #707b7c; /* Cambia de color cuando pasas el ratón */
+}
+
+.button-grey:focused {
+    -fx-background-color: #5d6d7e; /* Cambia de color cuando está seleccionado */
+}
+
+.button-grey:pressed {
+    -fx-background-color: #4a5456; /* Cambia de color cuando está presionado */
+}

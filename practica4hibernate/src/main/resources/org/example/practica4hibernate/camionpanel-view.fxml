@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="600.0" style="-fx-background-color: #8affda;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practica4hibernate.CamionController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="472.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="336.0" prefWidth="600.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="70.4" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="136.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="0.0" prefWidth="23.000012207031233" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="272.8000122070313" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="99.19998779296873" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="231.0" minHeight="10.0" prefHeight="31.60001220703125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="231.0" minHeight="0.0" prefHeight="31.60001220703125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="240.0" minHeight="10.0" prefHeight="34.4000244140625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="240.0" minHeight="10.0" prefHeight="39.99997558593749" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="240.0" minHeight="5.800019836425776" prefHeight="59.19999237060546" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="nombreEntrada" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="160.0" text="Nombre camion" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="176.0" text="Matricula" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="matriculaEntrada" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button fx:id="borrarBoton" alignment="CENTER" mnemonicParsing="false" onAction="#borrarCamion" prefHeight="45.0" prefWidth="170.0" styleClass="button-yellow" stylesheets="@boton.css" text="Borrar" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/icons8-borrar-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="ediatrBoton" mnemonicParsing="false" onAction="#editarCamion" prefHeight="30.0" prefWidth="274.0" styleClass="button-green" stylesheets="@boton.css" text="Editar" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/icons8-editar-archivo-de-texto-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="addBoton" mnemonicParsing="false" onAction="#addCamion" prefHeight="30.0" prefWidth="274.0" styleClass="button-purple" stylesheets="@boton.css" text="Añadir" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/add-camion.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="176.0" text="ID camion" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idEntrada" editable="false" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <Label fx:id="mesageError" textFill="RED">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <ListView fx:id="lista" onMouseClicked="#introduceCamion" prefHeight="234.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Panel Camiones" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="volverBoton" mnemonicParsing="false" onAction="#irBolver" styleClass="button-blue" stylesheets="@boton.css" text="Volver" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/icons8-volver-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </bottom>
+</BorderPane>
